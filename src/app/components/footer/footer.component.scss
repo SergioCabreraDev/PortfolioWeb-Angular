@@ -1,0 +1,97 @@
+.footer {
+    padding: 0% 22%;
+    color: #C0BDBD;
+    background-color:#1c1d1e;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:100px;
+    color: white;
+
+  
+    .svg_footer {
+      // filter: invert(100%);
+  
+    }
+    .ubicacion{
+      align-items: center;
+      text-align: center;
+    }
+    .contactos{
+      display: flex;
+      margin-top: 4%;
+      gap: 1%;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    p{font-family: '3';    color: #C0BDBD;}
+    
+  
+    }
+
+    @media (max-width: 767px) {
+        .footer{
+            padding: 4% 22% !important;
+        }
+      }
+      
+      @media (max-width: 1024px) {
+        .footer{
+            padding: 2% 22%;
+        }
+      }
+      
+        /* Ordenadores de sobremesa y portátiles */
+        @media only screen and (min-width : 1224px) {
+    
+        }
+
+
+    /* Declara la fuente personalizada */
+@font-face {
+    font-family: "1";
+    src: url("/assets/fonts/PublicSans-Bold.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "2";
+    src: url("/assets/fonts/PublicSans-Medium.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "3";
+    src: url("/assets/fonts/PublicSans-Light.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "4";
+    src: url("/assets/fonts/PublicSans-ExtraBoldItalic.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "5";
+    src: url("/assets/fonts/PublicSans-SemiBold.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "6";
+    src: url("/assets/fonts/PublicSans-ExtraLight.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

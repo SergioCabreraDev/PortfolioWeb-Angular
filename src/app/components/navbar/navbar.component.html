@@ -1,0 +1,17 @@
+<header class="header">
+  <a href="index.html" class="a">
+    <img src="../../../assets/Sin título-2-Recuperado.png" alt="" width="123px">
+  </a>
+  <button class="button" (click)="toggleMenu()">
+    <img src="../../../assets/svg/menu-icon (1).svg" width="25px" alt="">
+  </button>
+  <nav class="nav" [class.activo]="menuActivo">
+    <ul class="ul">
+      <li class="li"><a href="#inicio" class="a">Inicio</a></li>
+      <li class="li"><a href="#proyectos" class="a">Proyectos</a></li>
+      <li class="li"><a href="#certificaciones" class="a">Certificaciones</a></li>
+      <li class="li"><a href="#skills" class="a">Skills</a></li>
+    </ul>
+  </nav>
+</header>
+

@@ -1,0 +1,17 @@
+<div class="bloque3" id="certificaciones">
+    <h3 id="Certificaciones">ESTUDIOS ACADEMICOS Y CERTIFICACIONES</h3>
+
+    <div class="certificados">
+      <ng-container *ngFor="let tittle of tittles">
+        <div class="certificado">
+          <h3 class="tittle_tittle">{{tittle.tittle}}</h3>
+          <p><b>{{tittle.ubication}}</b></p>
+          @if (tittle.link=='') {
+            <a class="link">No dispongo de el certificado digital. <img src="/assets/img/Link-Share-2--Streamline-Sharp.png" alt="" width="15px"></a>
+          } @else {
+            <a href="{{tittle.link}}" class="link">Dispongo de el certificado digital. <img src="/assets/img/Link-Share-2--Streamline-Sharp.png" alt="" width="15px"></a>
+          }
+        </div>     
+      </ng-container>
+    </div>
+</div>

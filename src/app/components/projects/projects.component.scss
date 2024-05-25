@@ -1,0 +1,247 @@
+$color_principal: #ffda96;
+
+h3{
+  font-family: "4";
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: white; 
+  font-size: 23px;
+
+}
+
+p{
+  color: white;
+  font-family: "6";
+}
+
+.proyectos_tittle{
+  color: $color_principal;
+  font-size: 23px;
+}
+
+.bloque2 {
+    padding: 3rem 24rem;
+}
+
+@media (max-width: 1024px) {
+  .bloque2 {
+    padding: 1rem 1rem;
+}
+  h3{
+    color: white; 
+    font-size: 18px;
+  
+  }
+  .proyectos_tittle{
+    color: $color_principal;
+    font-size: 19px;
+  }
+
+  .portadaimg{
+      display: none;
+    }
+    .proyectos{
+      margin-bottom: 1rem;
+    
+      font-family: "4";
+    
+      .proyecto_frontend{
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        border-end-end-radius: 3rem;
+        background-color:#292929;
+        animation: fadeInLeft;
+        animation-duration: 0.7s;
+      }
+      div{
+        
+        margin: 2rem 2rem;
+        
+        h3{
+          
+          color: white;
+          font-family: "2";
+        }
+        span{
+          color: $color_principal;
+        }
+        p{
+          font-family: "6";
+          color: #c0bdbd;
+          font-size: 15px;
+        }
+        .portadaimg{
+          display: none;
+        }
+        a{
+          font-size: 15px;
+        }
+      }
+    
+    
+    
+    
+    }
+}
+
+
+@media (max-width: 767px) {
+  .bloque2 {
+      padding: 1rem 1rem;
+  }
+  .radio-inputs {
+      width: 100%; /* Cambia el ancho al 100% para adaptarse al contenedor */
+      max-width: 280px; /* Establece un ancho máximo para evitar que se extienda demasiado */
+  }
+
+
+}
+
+
+.proyectos{
+  margin-bottom: 1rem;
+
+  font-family: "4";
+
+  .proyecto_frontend{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border-end-end-radius: 3rem;
+    background-color:#292929;
+    animation: fadeInLeft;
+    animation-duration: 0.7s;
+  }
+  div{
+    
+    margin: 2rem 2rem;
+    
+    h3{
+      font-size: 25px;
+      color: white;
+      font-family: "2";
+    }
+    span{
+      color: $color_principal;
+    }
+    p{
+      font-family: "6";
+      color: #c0bdbd;
+    }
+  }
+}
+
+
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #252627;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 500px;
+    font-size: 14px;
+    font-family: "6";
+  }
+  
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgb(255, 255, 255);
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: #353535;
+    font-weight: 600;
+    color: #ffda96;
+  }
+
+  .github {
+    display: flex;
+    width: 10rem;
+    font-family: "3";
+    color: #c0bdbd;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+
+    padding: 10px 1px;
+    cursor: pointer;
+    background-color: #1f2022;
+    border: 0.5px solid #45484b;
+    border-radius: 10px;
+  }
+
+
+  /* Ordenadores de sobremesa y portátiles */
+  @media only screen and (min-width: 1224px) and (max-width: 1366px) {
+  .bloque2 {
+    padding: 3rem 3rem;
+}
+}
+
+  /* Declara la fuente personalizada */
+@font-face {
+    font-family: "1";
+    src: url("/assets/fonts/PublicSans-Bold.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Declara la fuente personalizada */
+  @font-face {
+    font-family: "2";
+    src: url("/assets/fonts/PublicSans-Medium.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Declara la fuente personalizada */
+  @font-face {
+    font-family: "3";
+    src: url("/assets/fonts/PublicSans-Light.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Declara la fuente personalizada */
+  @font-face {
+    font-family: "4";
+    src: url("/assets/fonts/PublicSans-ExtraBoldItalic.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Declara la fuente personalizada */
+  @font-face {
+    font-family: "5";
+    src: url("/assets/fonts/PublicSans-SemiBold.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Declara la fuente personalizada */
+  @font-face {
+    font-family: "6";
+    src: url("/assets/fonts/PublicSans-ExtraLight.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }

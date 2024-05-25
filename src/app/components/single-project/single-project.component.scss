@@ -1,0 +1,130 @@
+$color_principal: #ffda96;
+
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem;
+}
+
+.botones_proyectos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lenguajes{
+    margin-right: 2rem;
+}
+
+div{
+    
+    margin: 0.5rem 0.5rem;
+    
+    h3{
+      font-size: 25px;
+      color: white;
+      font-family: "2";
+    }
+    span{
+      color: $color_principal;
+    }
+    p{
+      font-family: "6";
+      color: #c0bdbd;
+    }
+  }
+.github {
+    display: flex;
+    width: 10rem;
+    font-family: "3";
+    color: #c0bdbd;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+
+    padding: 10px 1px;
+    cursor: pointer;
+    background-color: #1f2022;
+    border: 0.5px solid #45484b;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 1024px) {
+    .portadaimg{
+        display: none;
+    }
+    div{
+   
+        margin: 0.5rem 0.5rem;
+      
+        
+        h3{
+          font-size: px;
+          color: white;
+          font-family: "2";
+        }
+        span{
+          color: $color_principal;
+        }
+        p{
+          font-family: "6";
+          color: #c0bdbd;
+        }
+        .botones_proyectos{
+            display: flex;
+            flex-direction: column;
+            align-items: normal;
+            gap: 1.4rem;
+        }
+      }
+  }
+
+  
+  @media (max-width: 767px) {
+
+  }
+  
+  /* Declara la fuente personalizada */
+@font-face {
+    font-family: "1";
+    src: url("/assets/fonts/PublicSans-Bold.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Declara la fuente personalizada */
+  @font-face {
+    font-family: "2";
+    src: url("/assets/fonts/PublicSans-Medium.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Declara la fuente personalizada */
+  @font-face {
+    font-family: "3";
+    src: url("/assets/fonts/PublicSans-Light.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Declara la fuente personalizada */
+  @font-face {
+    font-family: "4";
+    src: url("/assets/fonts/PublicSans-ExtraBoldItalic.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Declara la fuente personalizada */
+  @font-face {
+    font-family: "5";
+    src: url("/assets/fonts/PublicSans-SemiBold.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Declara la fuente personalizada */
+  @font-face {
+    font-family: "6";
+    src: url("/assets/fonts/PublicSans-ExtraLight.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }

@@ -1,0 +1,35 @@
+<img class="portadaimg" src="{{project.imgPortada}}" alt="" width="600px" height="380px" />
+<div>
+  <span>{{ project.category }}</span>
+  <h3>{{ project.tittle }}</h3>
+
+  <p>
+    {{ project.description }}
+  </p>
+  <br/>
+  <span class="botones_proyectos">
+    
+    <a
+      href="{{ project.urlProyect }}"
+      class="github"
+      id="miBoton2"
+      target="_blank"
+    >
+      <img
+        class="svg_footer"
+        src="../../../assets/img/brand-github.png"
+        alt=""
+        width="22px"
+      />GitHub
+    </a>
+
+    <span class="lenguajes">
+        <!-- @for (technologies of project.technologies; track $index) { -->
+      <ng-container *ngFor="let technologies of project.technologies">
+        <img src="{{ technologies.urlImg }}" alt="" width="30px" />
+      </ng-container>
+    </span>
+
+  </span><br />
+ 
+</div>

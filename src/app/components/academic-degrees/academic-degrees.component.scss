@@ -1,0 +1,143 @@
+.bloque3 {
+    padding: 3rem 24rem;
+    background-color: #1c1d1e;
+}
+
+.certificados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.certificado {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #dbe0e409;
+    border: 0.5px solid #373839;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+h3 {
+    color: #ffda96;
+    font-family: "4";
+    font-size: 23px;
+}
+.tittle_tittle{
+    font-family: "5";
+    color: white;
+}
+
+p {
+    color: #c0bdbd;
+    font-family: "6";
+}
+
+.link {
+    color: #c0bdbd;
+    font-family: "6";
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .bloque3 {
+        padding: 3rem 3rem;
+    }
+    h3{
+   
+      font-size: 18px;
+      color: #ffda96;
+  
+    }
+    .certificados {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 30px;
+        gap: 15px;
+    }
+      
+      
+      
+      
+  }
+  
+  
+  @media (max-width: 767px) {
+    .bloque3 {
+        padding: 1rem 1rem;
+    }
+
+  
+  
+  }
+
+
+  /* Ordenadores de sobremesa y portátiles */
+  @media only screen and (min-width: 1224px) and (max-width: 1366px) {
+    .bloque3 {
+      padding: 3rem 3rem;
+  }
+  }
+
+
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "1";
+    src: url("/assets/fonts/PublicSans-Bold.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "2";
+    src: url("/assets/fonts/PublicSans-Medium.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "3";
+    src: url("/assets/fonts/PublicSans-Light.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "4";
+    src: url("/assets/fonts/PublicSans-ExtraBoldItalic.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "5";
+    src: url("/assets/fonts/PublicSans-SemiBold.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+    font-family: "6";
+    src: url("/assets/fonts/PublicSans-ExtraLight.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

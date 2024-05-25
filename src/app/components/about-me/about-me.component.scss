@@ -1,0 +1,174 @@
+$color_principal: #ffda96;
+.bloque1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 10rem 24rem;
+  background-color: #1c1d1e;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones {
+  display: flex;
+  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+  }
+
+  .linkedin {
+    display: flex;
+    width: 10rem;
+    font-family: "3";
+    color: #c0bdbd;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+    margin: 20px;
+    padding: 10px 1px;
+    cursor: pointer;
+    background-color: #1f2022;
+    border: 0.5px solid #45484b;
+    border-radius: 10px;
+  }
+  .github {
+    display: flex;
+    width: 10rem;
+    font-family: "3";
+    color: #c0bdbd;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+    margin: 20px;
+    padding: 10px 1px;
+    cursor: pointer;
+    background-color: #1f2022;
+    border: 0.5px solid #45484b;
+    border-radius: 10px;
+  }
+
+  .cv {
+    display: flex;
+    width: 10rem;
+    font-family: "3";
+    color: #c0bdbd;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+    margin: 20px;
+    padding: 10px 1px;
+    cursor: pointer;
+    background-color: #1f2022;
+    border: 0.5px solid #45484b;
+    border-radius: 10px;
+  }
+  .cv:hover {
+    background-color: #161616;
+
+    transition: 0.6s;
+  }
+  .github:hover {
+    background-color: #161616;
+
+    transition: 0.6s;
+  }
+  .linkedin:hover {
+    background-color: #161616;
+
+    transition: 0.6s;
+  }
+}
+
+@media (max-width: 767px) {
+  .bloque1 h1 {
+    font-size: 35px;
+  }
+  .botones {
+    display: block;
+  }
+  .bloque1 {
+    padding: 0rem 0rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    h1 {
+      font-size: 35px;
+    }
+    a {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .botones {
+    display: block;
+  }
+  .bloque1 h1 {
+    font-size: 35px;
+  }
+  .bloque1 {
+    padding: 3rem 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    h1 {
+      font-size: 35px;
+    }
+    a {
+      font-size: 15px;
+    }
+  }
+  
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "1";
+  color: white;
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 0.11em solid orange;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1s steps(15, end) forwards, blink 0.8s infinite;
+}
+
+h3 {
+  font-family: "5";
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 19px;
+  color: $color_principal;
+}
+
+  /* Ordenadores de sobremesa y portátiles */
+  @media only screen and (min-width : 1224px) {
+     h3{font-size: 23px;}
+  }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: orange;
+  }
+}

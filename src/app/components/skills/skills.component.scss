@@ -1,0 +1,45 @@
+.bloque4 {
+  padding: 3rem 24rem;
+  svg {
+      margin-top: 2rem;
+      width: 70px;
+      @media screen and (max-width: 480px) {
+          width: 60px;
+      }
+  }
+  .tecnologias {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10%;
+  }
+}
+
+h3 {
+  color: #ffda96;
+  font-family: "4";
+  font-size: 23px;
+}
+
+@media (max-width: 1024px) {
+  
+  h3 {
+      font-size: 18px;
+      color: #ffda96;
+  }
+  .bloque4 {
+
+      padding: 3rem 3rem;
+  
+  }
+  .tecnologias {
+      grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+ 
+  /* Ordenadores de sobremesa y portátiles */
+  @media only screen and (min-width: 1224px) and (max-width: 1366px) {
+    .bloque4 {
+      padding: 3rem 3rem;
+  }
+  }
