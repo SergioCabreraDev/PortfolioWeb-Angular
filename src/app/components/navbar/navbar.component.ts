@@ -10,10 +10,16 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
 
 
-  menuActivo: boolean = false;
+  menuActivo = false;
+
   toggleMenu() {
     this.menuActivo = !this.menuActivo;
   }
 
-  
+  closeMenu() {
+    this.menuActivo = false;
+  }
 }
+
+  
+
