@@ -1,5 +1,5 @@
 <img class="portadaimg" src="{{project.imgPortada}}" alt="" width="600px" height="380px" />
-<div>
+<div style="margin: 1rem;">
   <span>{{ project.category }}</span>
   <h3>{{ project.tittle }}</h3>
 
@@ -8,7 +8,7 @@
   </p>
   <br/>
   <span class="botones_proyectos">
-    
+  @if (project.id != 1) {
     <a
       href="{{ project.urlProyect }}"
       class="github"
@@ -22,6 +22,39 @@
         width="22px"
       />GitHub
     </a>
+  }
+
+    @if (project.id == 1) {
+      <div style="display: flex; flex-direction: column;">
+      <a
+      href="{{ project.urlProyect }}"
+      class="github"
+      id="miBoton2"
+      target="_blank"
+    >
+      <img
+        class="svg_footer"
+        src="../../../assets/img/brand-github.png"
+        alt=""
+        width="22px"
+      />GitHub
+    </a>
+      
+      <a
+      href="http://angular-restaurant-app.s3-website.eu-north-1.amazonaws.com"
+      class="github"
+      id="miBoton2"
+      target="_blank"
+    >
+      <img
+        class="svg_footer"
+        src="../../../assets/img/Web--Streamline-Plump.png"
+        alt=""
+        width="22px"
+      />Ver Página
+    </a>
+    </div>
+    }
 
     <span class="lenguajes">
         <!-- @for (technologies of project.technologies; track $index) { -->

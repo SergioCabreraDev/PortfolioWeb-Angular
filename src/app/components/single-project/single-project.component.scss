@@ -4,7 +4,7 @@ div{
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    padding: 1rem;
+ 
 }
 
 .botones_proyectos{
@@ -22,7 +22,7 @@ div{
     margin: 0.5rem 0.5rem;
     
     h3{
-      font-size: 25px;
+      font-size: 20px;
       color: white;
       font-family: "2";
     }
@@ -32,6 +32,7 @@ div{
     p{
       font-family: "6";
       color: #c0bdbd;
+      font-size: 15px;
     }
   }
 .github {
@@ -49,6 +50,7 @@ div{
     background-color: #1f2022;
     border: 0.5px solid #45484b;
     border-radius: 10px;
+    font-size: 15px;
   }
 
   @media (max-width: 1024px) {
