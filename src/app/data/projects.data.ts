@@ -24,7 +24,7 @@ export const projects: Projects[] = [
         },
         {
             name: "AWS",
-            urlImg: "../../assets/img/sql.png"
+            urlImg: "../../assets/img/brand-aws.png"
         }
     ]
     },
